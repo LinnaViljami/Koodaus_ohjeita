@@ -1,0 +1,2 @@
+# Koodaus_ohjeita_suomeksi
+Koottuna hyödyllisiä ohjeita koodaamiseen suomenkielellä
