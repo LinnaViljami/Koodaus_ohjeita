@@ -11,6 +11,7 @@ a{1,3} = sisältää 1-3 'a' kirjainta
 a|c = Sisältää kirjaimen a tai c
 \[ = tulkitsee hakasulkeen merkkinä eikä regex symbolina
 [T]? = voi sisältää kirjaimen T, ei pakko
+
 \w = [a-zA-Z0-9_] = sisältää numeroita tai kirjaimia
 \W = [^\w] = ei sisällä numeroita tai kirjaimia
 \d = [0-9] = sisältää numeroita
@@ -18,7 +19,20 @@ a|c = Sisältää kirjaimen a tai c
 \s = sisältää välilyönnin
 \S = ei sisällä välilyöntiä
 
+(?=3)[2] = numero kaksi jonka jälkeen on 3 
+(?<=\$)[0–9\.]* = 0 tai enemmän numeroita 0-9 tai pisteen sisältäviä
+merkkijonoja joiden edessä on '$' merkki
+(?!9)[6] = numero 6 mutta ei jos numero 9 numeron 6 jälkeen
+(?<!6)[9] = numero 9 mutta ei jos numero 6 ennen numeroa 9
 
+i = Isot ja pienet kirjaimet katsotaan samaksi
+Esimerkki: /Esa/i = Esa tai esa
+
+g = Etsi koko riviltä
+Esimerkki: Esa oli Esa, ilman g lippua /Esa/i löytää vaan ensimmäisen
+sanan kun taas /Esa/gi löytää molemmat.
+
+m = Etsii monelta riviltä
 
 Regex(=regular expressions) on kieli, jolla voi määritellä erilaisten
 merkkijonojen formaatteja. Esimerkiksi, mikäli haluat poistaa kaikki 
