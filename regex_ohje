@@ -18,3 +18,11 @@ a|c = Sisältää kirjaimen a tai c
 \s = sisältää välilyönnin
 \S = ei sisällä välilyöntiä
 
+
+
+Regex(=regular expressions) on kieli, jolla voi määritellä erilaisten
+merkkijonojen formaatteja. Esimerkiksi, mikäli haluat poistaa kaikki 
+kansiossa olevat '.mp3' tiedostot, voit poistaa ne määrittelemällä
+regexin avulla "poista .*mp3$", sen sijaan että joutuisit luettelemaan
+jokaisen mp3 tiedoston nimen. Linuxin komentorivillä edellä mainittu
+onnistuisi komennolla "rm .*mp3$".
